@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+
+// Theme colours
+$color--primary: #fedb00;
+$color--secondary: #686b6d;
+
+// Type colours
+$color--default: $color--secondary;
+
+// Misc
+$color--border: #f0f0f0;
+
+
+/* ============================================
+   Typography
+   :: Default to system font stack
+*/
+$font--primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$font--secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$base-font-size: 16px;
+$base-line-height: 25px;
+$font-sizes: (
+
+    // non-standard large sizes
+    giga:    80px,
+    mega:    60px,
+    kilo:    48px,
+
+    // standard sizes
+    alpha:   38px,
+    beta:    30px,
+    gamma:   28px,
+    delta:   22px,
+    epsilon: 20px,
+    zeta:    16px,
+
+    // non-standard small sizes
+    milli:   14px
+);
+
+
+/* ============================================
+   Breakpoints
+*/
+$breakpoints: (
+    'desktop'       '(min-width: 1000px)',
+    'mobile'        '(min-width: 700px)'
+);
+
+
+/* ============================================
+    Transition speeds
+*/
+$default-transition-speed: 300ms;

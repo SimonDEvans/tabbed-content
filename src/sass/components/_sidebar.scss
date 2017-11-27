@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $SIDEBAR
+\*------------------------------------*/
+
+.sidebar {
+    width: 100%;
+
+    @include media-query(mobile) {
+        display: inline-block;
+        width: 35%;
+        vertical-align: top;
+    }
+
+    &__item {
+        @include font-size(zeta);
+        width: 100%;
+        padding: 20px 15px;
+        color: $color--secondary;
+        text-align: left;
+        cursor: pointer;
+        background: {
+            position: 95%;
+            color: #fff;
+            size: 20px;
+            image: url('../images/plus.svg');
+            repeat: no-repeat;
+        }
+        border: {
+            top: 0;
+            right: 0;
+            bottom: 1px solid $color--border;
+            left: 0;
+        }
+
+        transition: background-color $default-transition-speed ease;
+
+        &--active,
+        &:focus {
+            background: {
+                color: $color--primary;
+                image: url('../images/minus.svg');
+            }
+            border: 0;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:first-of-type {
+            border-top: 1px solid $color--border;
+        }
+
+        @include media-query(mobile) {
+            padding: 12px 15px;
+            background: {
+                image: url('../images/arrow.svg');
+            }
+            border: 0;
+            border-radius: 7px;
+
+            &:first-of-type {
+                border-top: 0;
+            }
+
+            &--active,
+            &:hover,
+            &:focus {
+                background: {
+                    color: $color--primary;
+                    image: url('../images/arrow.svg');
+                }
+            }
+        }
+    }
+}

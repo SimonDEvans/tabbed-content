@@ -1,0 +1,1 @@
+import './components/tabbed-content.js';

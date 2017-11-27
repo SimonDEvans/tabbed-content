@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $CONTENT
+\*------------------------------------*/
+
+.content {
+    width: 100%;
+
+    @include media-query(mobile) {
+        display: inline-block;
+        width: 65%;
+        padding-left: 12%;
+        font-size: 0;
+        vertical-align: top;
+
+        &--active {
+            border-bottom: 1px solid $color--border;
+        }
+    }
+
+    &__item {
+        @include font-size(zeta);
+        display: none;
+        padding: 30px 15px;
+
+        @include media-query(mobile) {
+            padding: 0;
+        }
+
+        &--active {
+            display: block;
+            border: 0;
+        }
+    }
+}

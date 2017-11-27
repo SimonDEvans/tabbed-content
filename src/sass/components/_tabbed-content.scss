@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $TABBED CONTENT
+\*------------------------------------*/
+
+.tabbed-content {
+    margin: 30px auto;
+    font-size: 0;
+
+    @include media-query(mobile) {
+        padding: 0 20px;
+        margin: 50px auto;
+    }
+
+    @include media-query(desktop) {
+        width: 80%;
+        max-width: 1000px;
+    }
+}
