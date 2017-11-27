@@ -10,8 +10,8 @@
     </head>
     <body>
         <h1>Nullam id dolor id nibh vehicula</h1>
-        <div class="tabbed-content" role="tablist">
-            <aside class="sidebar">
+        <div class="tabbed-content">
+            <aside class="sidebar" role="tablist">
                 <button data-button="1" role="tab" aria-controls="panel-1" id="tab-1" aria-selected="true" class="sidebar__item sidebar__item--active" >Lorem ipsum</button>
                 <button data-button="2" role="tab" aria-controls="panel-2" id="tab-2" aria-selected="false" class="sidebar__item">Maecenas faucibus</button>
                 <button data-button="3" role="tab" aria-controls="panel-3" id="tab-3" aria-selected="false" class="sidebar__item">Tortor mauris</button>
@@ -19,29 +19,28 @@
                 <button data-button="5" role="tab" aria-controls="panel-5" id="tab-5" aria-selected="false" class="sidebar__item">Curabitur blandit</button>
             </aside>
             <main class="content">
-                <div data-content="1" aria-labelledby="tab-1" role="panel" class="content__item content__item--1 content__item--active">
+                <div data-content="1" id="panel-1" aria-labelledby="tab-1" role="panel" class="content__item content__item--1 content__item--active">
                     <h2>Lorem ipsum</h2>
                     Cras mattis consectetur purus sit amet fermemtum. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                 </div>
-                <div data-content="2" aria-labelledby="tab-2" aria-hidden="true" role="panel" class="content__item content__item--2">
+                <div data-content="2" id="panel-2" aria-labelledby="tab-2" aria-hidden="true" role="panel" class="content__item content__item--2">
                     <h2>Maecenas faucibus</h2>
                     Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermemtum. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.
                 </div>
-                <div data-content="3" aria-labelledby="tab-3" aria-hidden="true" role="panel" class="content__item content__item--3">
+                <div data-content="3" id="panel-3" aria-labelledby="tab-3" aria-hidden="true" role="panel" class="content__item content__item--3">
                     <h2>Tortor mauris</h2>
                     Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermemtum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                 </div>
-                <div data-content="4" aria-labelledby="tab-4" aria-hidden="true" role="panel" class="content__item content__item--4">
+                <div data-content="4" id="panel-4" aria-labelledby="tab-4" aria-hidden="true" role="panel" class="content__item content__item--4">
                     <h2>Amet fermemtum</h2>
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermemtum. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. 
                 </div>
-                <div data-content="5" aria-labelledby="tab-5" aria-hidden="true" role="panel" class="content__item content__item--5">
+                <div data-content="5" id="panel-5" aria-labelledby="tab-5" aria-hidden="true" role="panel" class="content__item content__item--5">
                     <h2>Curabitur blandit</h2>
                     Cras mattis consectetur purus, tellus ac cursus commodo, sit amet fermemtum.  Curabitur blandit tempus porttitor.Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus,  tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
                 </div>
             </main>
         </div>
-
         <script type="text/javascript" src="./../../../js/main.js"></script>
     </body>
 </html>
